@@ -7,7 +7,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR})
 find_package(Boost)
 INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
 
-add_executable(test_bind main.cpp
+add_executable(test_bind tests.cpp
 	Storages.hpp StorageTypes.hpp
 	Caller.hpp
 	Bind.hpp
